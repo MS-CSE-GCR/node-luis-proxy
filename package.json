@@ -1,0 +1,33 @@
+{
+  "name": "node-luis-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "body-parser-xml": "^1.1.0",
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "querystring": "^0.2.0",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-test": "node testserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MS-CSE-GCR/node-luis-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MS-CSE-GCR/node-luis-proxy/issues"
+  },
+  "homepage": "https://github.com/MS-CSE-GCR/node-luis-proxy#readme"
+}
