@@ -92,7 +92,9 @@ function intent2result(intents) {
         for(let entity of model[intents.topScoringIntent.intent].entities) {
             let found = false;
             for(let entityTypeFunc of entity.type) {
-                
+                if(found) {
+                    break;
+                }
                 for(let intententity of intents.entities) {
                     try{
                         if(intententity.type === Object.keys(entityTypeFunc)[0]) {
@@ -100,6 +102,7 @@ function intent2result(intents) {
                             if(checkRange(indexRange, msg.startIndex, msg.endIndex)) {
                                 result.push(`${entity.name}: ${msg}`)
                                 found = true;
+                                
                             }
                         }
                     } catch(e) {
